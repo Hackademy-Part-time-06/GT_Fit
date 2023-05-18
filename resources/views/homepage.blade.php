@@ -1,5 +1,13 @@
 
 <x-main>
+
+    @if (session('succes'))
+    <div>
+        {{ session('succes') }}
+    </div>
+    @endif
+
+
         <!-- Header-->
         <header class="masthead text-center text-white">
             <div class="masthead-content">

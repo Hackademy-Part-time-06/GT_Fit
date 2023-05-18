@@ -17,4 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class,'homepage'])->name('homepage');
 Route::get('/corsi_disponibili',[PageController::class,'corsi'])->name('corsi');
 Route::get('/dettaglio_corso/{detail}',[PageController::class,'detail'])->name('details');
-Route::get('/contatti',[PageController::class,'contatti'])->name('contatti');
+Route::get('/contatti',[PageController::class,'contatti'])->name('contact');
+
+Route::post('/send',[PageController::class,'send'])->name('send');
